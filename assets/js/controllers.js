@@ -4,4 +4,4 @@ doodleScript.controller('ListListingController', ['$scope', '$http', function($s
       .then(function(response){
         $scope.listings = response.data;
       })
-    };
+}]);
