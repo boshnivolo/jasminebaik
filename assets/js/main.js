@@ -1,6 +1,9 @@
 ;(function(){
 
-  var doodleScript = angular.module('DoodleScript', ['ngRoute'], function($routeProvider){
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function(){
+
+  angular.module('DoodleScript', ['ngRoute'], function($routeProvider){
     $routeProvider
     .when('/', {
       templateUrl: 'main.html',
@@ -24,4 +27,6 @@
         })
   }]);
 
-})(); //END IIFE
+}; //END xhr extension
+
+})(); // END IIFE
