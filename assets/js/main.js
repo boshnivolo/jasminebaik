@@ -1,8 +1,5 @@
 ;(function(){
 
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function(){
-
   angular.module('DoodleScript', ['ngRoute'], function($routeProvider){
     $routeProvider
     .when('/', {
@@ -26,7 +23,5 @@
           $scope.listings = response.data;
         })
   }]);
-
-}; //END xhr extension
 
 })(); // END IIFE
