@@ -1,6 +1,14 @@
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function(){
-  $.getJSON("https://openapi.etsy.com/v2/users/active?api_key=hr9qkeabvt5jn57akxmxzm0o", function(data) {
-    console.log(data.results.listing_id);
-  });
-};
+;(function(){
+
+  var doodleScript = angular.module('DoodleScript', ['ngRoute'], function($routeProvider){
+    $routeProvider
+    .when('/', {
+      templateUrl: 'index.html',
+    })
+
+    .when('/cats', {
+      templateUrl: 'cats.html',
+    })
+
+  }) // END .when routing
+})(); //END IIFE
