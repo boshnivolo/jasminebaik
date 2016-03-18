@@ -3,7 +3,7 @@
   var doodleScript = angular.module('DoodleScript', ['ngRoute'], function($routeProvider){
     $routeProvider
     .when('/', {
-      templateUrl: 'index.html',
+      templateUrl: 'main.html',
     })
 
     .when('/cats', {
